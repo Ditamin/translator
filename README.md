@@ -23,7 +23,7 @@ curl --location 'http://localhost:8181/translation' \
 }'
 
 ### Внимание
-Поднятый через docker java класс не хочет подсоединяться к postgres контейнеру, поэтому он не может записывать данные. Для корректной работы необходимо также поднять docker compose и отдельно запустить TranslatorApplication (В идеале через Intellij Idea) и тогда можно спокойно отправлять запросы, но уже на 8081 порт (http://localhost:8081/translation)
+Поднятый через docker java класс не хочет подсоединяться к postgres контейнеру, поэтому он не может записывать данные. Для корректной работы необходимо также поднять docker compose и отдельно запустить TranslatorApplication (В идеале через Intellij Idea) и тогда можно спокойно отправлять запросы, но уже на 8081 порт (http://localhost:8081/translation), также после запуска на http://localhost:8081/swagger-ui/index.html будет доступен swagger UI на котором можно проще тестировать запросы.
 
 P.S:  я пытался
 
