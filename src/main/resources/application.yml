@@ -2,15 +2,19 @@ server:
   port: 8081
 
 db:
+  url: "jdbc:postgresql://localhost:5432/translations"
   username: "postgres"
   password: "postgres"
-  url: "jdbc:postgresql://localhost:5432/translations"
 
 spring:
   application:
     name: app
   liquibase:
     change-log: classpath:/db/changelog/changelog-master.xml
+
+springdoc:
+  swagger-ui:
+    path: /swagger.ui
 
 client:
   microsoft:
