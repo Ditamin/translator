@@ -12,6 +12,10 @@ spring:
   liquibase:
     change-log: classpath:/db/changelog/changelog-master.xml
 
+springdoc:
+  swagger-ui:
+    path: /swagger.ui
+
 client:
   microsoft:
     apikey: "9b25d96b62msh624a85ca76533bcp118dcdjsn1a08eab57f44"
