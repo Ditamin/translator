@@ -11,7 +11,7 @@ services:
       - postgresql
     environment:
       - SERVER_PORT= 8181
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgresql:5432/translations
+      - DB_URL=jdbc:postgresql://postgresql/translations
 
   postgresql:
     image: postgres:16
